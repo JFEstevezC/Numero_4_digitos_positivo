@@ -74,18 +74,21 @@ frame_operaciones = Frame(ventana_principal)
 frame_operaciones.config(bg="green", width=480, height=120)
 frame_operaciones.place(x=10, y=260)
 
-# Botón Sumar
-bt_comprobar = Button(frame_operaciones, text="Comprobar", command=comprobar)
+# Botón Comprobar
+foton= PhotoImage(file="img/correr.png")
+bt_comprobar = Button(frame_operaciones,image=foton, text="Comprobar", command=comprobar)
 bt_comprobar.config(bg="white",  fg="black", font=("Times New Roman",16))
 bt_comprobar.place(x=45, y=35, width=100, height=50)
 
 # Botón Borrar
-bt_borrar = Button(frame_operaciones, text="Borrar", command=borrar)
+fotoo= PhotoImage(file="img/borrar.png")
+bt_borrar = Button(frame_operaciones,image=fotoo, text="Borrar", command=borrar)
 bt_borrar.config(bg="white", fg="black", font=("Times New Roman",16))
 bt_borrar.place(x=190, y=35, width=100, height=50)
 
 # Botón Salir
-bt_salir = Button(frame_operaciones, text="Salir", command=salir)
+fotoon= PhotoImage(file="img/salir.png")
+bt_salir = Button(frame_operaciones, text="Salir",image=fotoon,command=salir)
 bt_salir.config(bg="white", fg="black", font=("Times New Roman",16))
 bt_salir.place(x=335, y=35, width=100, height=50)
 
